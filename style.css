@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(255, 228, 196);
+}
+
+.logo{
+    display: flex;
+}
+.logo .logo-child img{
+    width: 150px;
+    height: 100px;
+}
+h1{
+    font-family: "Playwrite AU QLD", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+h2{
+    font-family: "Noto Serif", serif;
+    margin-top: 0px;
+}
+img{
+    width: 250px;
+    height: 145px;
+}
+.box{
+    display: flex, inline-block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.card{
+    width:45%;
+}
+
+.box .card img{
+    float: left;
+    margin-right:10px ;
+    flex: 50px;
+    border-radius: 5px;
+}
+.box .card p{
+    text-align: justify;
+}
+.box1{
+    float: left;
+}
+.box2{
+    float: right;
+}
+
+@media (max-width:500px) {
+    .logo {
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+    }
+    .box1 h2{
+        text-align: center;
+        color: orangered;
+    }
+    .box2 h2{
+        text-align: center;
+        color: rgb(0, 26, 255);
+    }
+    .box3 h2{
+        text-align: center;
+        color: rgb(239, 142, 63);
+    }
+    .card{
+        width: 100%;
+    }
+    .card img{
+        width: 100%;
+        display: inline;
+        margin-bottom: 5px;
+        object-fit: cover;
+    }
+}
